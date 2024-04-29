@@ -44,7 +44,7 @@ app.post('/lead', async (req, res) => {
     };
 
     const response = await axios.post('https://slack.com/api/views.open', {
-      trigger_id,
+      triggerId,
       view,
     }, {
       headers: {

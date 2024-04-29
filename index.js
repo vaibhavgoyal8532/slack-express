@@ -84,6 +84,9 @@ app.post('/view_submission', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+app.get('/' , (req,res)=>{
+    res.text('Hellow up and running! ');
+})
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

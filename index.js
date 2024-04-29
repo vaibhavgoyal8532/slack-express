@@ -85,7 +85,7 @@ app.post('/view_submission', async (req, res) => {
   }
 });
 app.get('/' , (req,res)=>{
-    res.text('Hellow up and running! ');
+    res.json({message: 'Hellow up and running! '});
 })
 
 app.listen(port, () => {
